@@ -49,7 +49,7 @@
 
 // console.log(endereco.join(', '))
 
-//Exercício 1
+// Exercício 1
 // const numeros = [1,2,3,4,5]
 // //Retorna uma lista de números ao quadrado:
 // const numerosAoQuadrado = numeros.map((value)=> value*value)
@@ -57,8 +57,55 @@
 // console.log(numerosAoQuadrado)
 
 
-numeros = [1,2,10,4,5];
-// Retornar o maior número de numeros:
-const maior = Math.max(...numeros)
+// numeros = [1,2,10,4,5];
+// // Retornar o maior número de numeros:
+// const maior = Math.max(...numeros)
 
-console.log(maior)
+// console.log(maior)
+
+
+const array = [1, 2, 3, 4, 'Larissa', true, 7, 8, 9, 10]
+let i;
+array[array.length-1]
+
+for(i=0; i < array.length; i++) {
+    console.log(array[i])
+}
+
+array.forEach((value) => console.log(value))
+
+const meuArrayMutante = array.map(() => 2)
+
+    console.log(meuArrayMutante);
+
+const numeros = meuArrayMutante.map((value) => (value) + Math.floor(Math.random()*10))
+
+    // console.log(numeros);
+
+for(i=0; i < numeros.length; i++) {
+    const element = numeros [i];
+
+if(element % 2 !==0) {
+    console.log(element)
+}
+
+}
+console.log('Questão 5c')
+numeros.forEach(numero => {
+    if(numero > 4){
+        console.log(numero)
+    }
+})
+
+console.log('Questão 6c')
+const pares = numeros.filter(numero => numero % 2 === 0)
+    console.log(pares)
+
+const cores = ['verde', 'amarelo', 'laranja', 'vermelho', 'azul']
+
+cores.forEach(cor => console.log(cor.toUpperCase()))
+
+cores.splice(cores.indexOf('amarelo'),1)
+    console.log(cores)
+
+cores.forEach(cor => console.log(cor[0].toUpperCase() + cor.substring(1)))
