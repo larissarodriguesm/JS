@@ -39,9 +39,14 @@
 //     tvEstaLigada = false
 // }
 
-function isTruthy (valor) {
-    return !!valor
+// function isTruthy (valor) {
+//     return !!valor
+// }
+
+// console.log(isTruthy("0"));
+
+function perimetroQuadrado (valor){
+    return valor * 4
 }
 
-console.log(isTruthy("0"));
-
+console.log(perimetroQuadrado(2))
